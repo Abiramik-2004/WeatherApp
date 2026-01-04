@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FindMyWeather</title>
+    <link rel="icon" type="png" href="img/wind.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="home.css">
+</head>
+<body>
+
+    <div class="header">
+        <h1>FindMyWeather</h1>
+    </div>
+    
+    <div class="container">
+        <div class="city-name">
+            <i class="fa-solid fa-map-pin"></i>
+            <h1 id="city-name">Karaikudi</h1>
+          </div>
+          <div class="weather-icon-css">
+            <img class="weather-icon" src="img/sun.png" />
+          </div>
+          <div class="weather-description">
+            <div class="show-metric" id="metric">0°</div>
+            <div class="weather-details">
+              <div class="weather-main" id="weather-main">Sunnen</div>
+              <div class="h-f">
+                <div class="show-humidity">H: <span id="humidity">60</span></div>
+                ||
+                <div class="show-humidity">
+                  F: <span id="feels-like">60</span>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div class="forcasts-box">
+        <div class="today-forecast">
+          <h4>TODAY</h4>
+          <div class="weather-icon-today">
+            <img class="weather-icons" src="img/sun.png" />
+          </div>
+          <div class="temp-today">
+            <span id="temp-min-today">50°</span><span>/ </span
+            ><span id="temp-max-today">55°</span>
+          </div>
+          <div class="weather-main-today" id="weather-main">Sunnen</div>
+        </div>
+
+        <!-- 5day Forecast -->
+        <div class="forecast">
+          <h5>6-DAYS FORECAST</h5>
+          <div id="forecast-box"></div>
+        </div>
+      </div>
+    </div>
+    <nav>
+        <ul>
+          <li>
+            <a class="active" href="home.html"
+              ><i class="fa-solid fa-location-arrow"></i
+            ></a>
+          </li>
+          <li>
+            <a href="Search.html"
+              ><i class="fa-solid fa-magnifying-glass"></i
+            ></a>
+          </li>
+          
+        </ul>
+    </nav>
+    <script src="home.js"></script>
+
+</body>
+</html>
